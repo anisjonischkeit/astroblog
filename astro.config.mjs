@@ -5,6 +5,6 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "anisjonischkeit.github.io",
+  site: "https://anisjonischkeit.github.io",
   integrations: [mdx(), sitemap()],
 });
