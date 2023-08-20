@@ -14,7 +14,7 @@ export async function get(context) {
     items: posts.map((post) => ({
       ...post.data,
       content: sanitizeHtml(parser.render(post.body)),
-      link: `/blog/${post.slug}/`,
+      link: import.meta.env.BASE_URL + `/blog/${post.slug}/`,
     })),
   });
 }
