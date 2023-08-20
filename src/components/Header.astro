@@ -50,6 +50,21 @@ import { SITE_TITLE } from "../consts";
           ></path></svg
         >
       </a>
+      <button id="dark-mode-switcher">dark mode</button>
+      <script>
+        document.getElementById("dark-mode-switcher").onclick = () => {
+          console.log("test");
+          const darkModeAttribute = "data-dark-mode";
+          const isDarkModeOn = document.body.hasAttribute(darkModeAttribute);
+          if (isDarkModeOn) document.body.removeAttribute("data-dark-mode");
+          else document.body.setAttribute("data-dark-mode", "active");
+        };
+      </script>
+      <!-- <script>
+        import { $theme } from "./themeStore";
+        document.getElementById("dark-mode-switcher");
+        $theme.get().backgroundColor;
+      </script>-->
     </div>
   </nav>
 </header>
