@@ -6,7 +6,6 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   site: "https://anisjonischkeit.github.io",
-  base: "/astroblog",
-  trailingSlash: "never",
+  base: "astroblog/",
   integrations: [mdx(), sitemap()],
 });
